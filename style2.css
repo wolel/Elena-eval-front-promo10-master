@@ -1,0 +1,80 @@
+*{box-sizing: border-box;}
+body{margin: 0;padding: 0;background-color: #c05519}
+
+/*#main{float: left;padding: 0;background-color: #825923;margin-left: auto;
+    margin-right: auto;width: 100%;height: auto}*/
+
+.l1{height:250px;color:white;display: inline-block;font-size: 120%;cursor: pointer;
+    font-family: 'Big Shoulders Text', cursive;letter-spacing: 2.5px;text-align: center;
+    border:2px solid white}
+
+.b {height:250px;
+    width: 20%;
+    text-align: center;font-size: 120%;cursor: pointer;border: 2px solid white}
+
+p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;letter-spacing: 2.5px}
+
+.box1 {width: 40%;background-color: #ff6819}
+.box2 {background-color: #7f1c0a;width: 20%}
+.box3 {background-color: #2f7365;color:white;display: inline-block}
+.box4 {background-color: #a12731;color:white;display: inline-block}
+.box5 {background-color: #8e5c1a;color:white;display: inline-block}
+.box6 {background-color: #b83200;color:white;display: inline-block}
+.box7 {background-color: #798057;color:white;display: inline-block}
+.box8 {background-color: #2f7365;color:white;display: inline-block}
+
+#photo {max-width: 200%;height:460px;overflow: scroll;
+    float:right;border: 2px solid white}
+/*Hover sur les boxes*/
+.box1:hover{background-color: #ff6819;transition: background-color 0.3s ease-in-out;}
+.box2:hover{background-color: #f03211;transition: background-color 0.3s ease-in-out;}
+.box3:hover{background-color: #49b8a6;transition: background-color 0.3s ease-in-out;}
+.box4:hover{background-color: #cc2b3c;transition: background-color 0.3s ease-in-out;}
+.box5:hover{background-color: #b7791e;transition: background-color 0.3s ease-in-out;}
+.box6:hover{background-color: orangered;transition: background-color 0.3s ease-in-out;}
+.box7:hover{background-color: #9fa670;transition: background-color 0.3s ease-in-out;}
+.box8:hover{background-color: #49b8a6;transition: background-color 0.3s ease-in-out;}
+
+/*pictogrammes*/
+
+.fas{font-size: 250%; color:white;}
+.fab{font-size: 250%; color:white;}
+.far{font-size: 250%; color:white;}
+
+.fas:hover{transform: rotate(360deg);transition: 1s}
+.fab:hover{transform: scale(0.5,0.5);transition: 1s}
+.far:hover{transform: scale(1.5,1.5);transition: 1s}
+
+@media screen and (max-width: 800px)  {
+    #main{width:100%}
+    #photo{display: none}
+    .box1{width: 100%}
+    .box2{width: 100%;height: 200px}
+    .box3{width: 50%}
+    .box4{width: 50%}
+    .box5{width: 100%;height: 200px}
+    .box6{width: 50%}
+    .box7{width: 50%}
+    .box8{width: 100%;height: 200px}
+}
+@media only screen and (min-width: 800px) {
+    #main{width:100%}
+    #photo{width: 50%;height: 700px;}
+    .box1{width: 100%;height: 180px}
+    .box2{width: 50%}
+    .box3,.box4,.box5,.box6,.box7,.box8{width: 16.66%}
+}
+@media only screen and (min-width: 1300px) {
+    #main{width:100%;height: 932px;margin-left: auto;margin-right: auto}
+    #photo{width: 40%;height: 740px}
+    .box1{width: 100%;height: 180px}
+    .box2{width: 60%;height: 180px}
+    .box3,.box4,.box5,.box6{width: 20%;height: 280px}
+    .box7{width: 40%;height: 280px}
+    .box8{width: 100%;height: 180px}
+}
+
+
+
+
+
