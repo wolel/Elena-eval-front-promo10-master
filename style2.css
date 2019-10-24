@@ -1,5 +1,5 @@
 *{box-sizing: border-box;}
-body{margin: 0;padding: 0;background-color: #c05519}
+body{margin: 0;padding: 0;background-color: white}
 
 /*#main{float: left;padding: 0;background-color: #825923;margin-left: auto;
     margin-right: auto;width: 100%;height: auto}*/
@@ -13,6 +13,8 @@ body{margin: 0;padding: 0;background-color: #c05519}
     text-align: center;font-size: 120%;cursor: pointer;border: 2px solid white}
 
 p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;letter-spacing: 2.5px}
+#titreInfograph {font-size: 170%;margin-top: 5px;}
+
 
 .box1 {width: 40%;background-color: #ff6819}
 .box2 {background-color: #7f1c0a;width: 20%}
@@ -23,8 +25,13 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 .box7 {background-color: #798057;color:white;display: inline-block}
 .box8 {background-color: #2f7365;color:white;display: inline-block}
 
+
 #photo {max-width: 200%;height:460px;overflow: scroll;
     float:right;border: 2px solid white}
+#photo1{display: inline-block;overflow: hidden;
+
+}
+
 /*Hover sur les boxes*/
 .box1:hover{background-color: #ff6819;transition: background-color 0.3s ease-in-out;}
 .box2:hover{background-color: #f03211;transition: background-color 0.3s ease-in-out;}
@@ -35,8 +42,17 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 .box7:hover{background-color: #9fa670;transition: background-color 0.3s ease-in-out;}
 .box8:hover{background-color: #49b8a6;transition: background-color 0.3s ease-in-out;}
 
-/*pictogrammes*/
+.box2:hover {transform: scale3d(.99,.96,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box3:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box4:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box5:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box6:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box7:hover {transform: scale3d(.99,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box8:hover {transform: scale3d(.99,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
 
+
+/*pictogrammes*/
+.fa-user-astronaut{margin-top: -18px}
 .fas{font-size: 250%; color:white;}
 .fab{font-size: 250%; color:white;}
 .far{font-size: 250%; color:white;}
@@ -44,6 +60,21 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 .fas:hover{transform: rotate(360deg);transition: 1s}
 .fab:hover{transform: scale(0.5,0.5);transition: 1s}
 .far:hover{transform: scale(1.5,1.5);transition: 1s}
+
+/*animation/slider sur la photo*/
+
+@keyframes siderPhoto {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    100% { left: -300%; }
+}
+
+/*les media query*/
 
 @media screen and (max-width: 800px)  {
     #main{width:100%}
