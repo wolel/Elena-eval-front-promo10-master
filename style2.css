@@ -1,23 +1,57 @@
 *{box-sizing: border-box;}
-body{margin: 0;padding: 0;background-color: white}
+body{margin: 0;padding: 0;
+    background-color: white;
+}
 
-/*#main{float: left;padding: 0;background-color: #825923;margin-left: auto;
-    margin-right: auto;width: 100%;height: auto}*/
+/* Animation sur le titre*/
+.ml2{
+    font-weight: 20px;
+    font-size: 70px;
+    color:white;
+    display: inline-block;
+    padding-right: 40px;
+}
+.ml2 .letter{
+    display: inline-block;
+}
+#blockCV{
+    display: flex;
+}
+#cv1 {
+    background-image: url("CV_pg1.jpg");
+    display: none;
+    height: auto;
+    width: 879.44px;
+}
+#cv2{
+    background-image: url("CV_pg1.jpg");
+    display: none;
+    height: auto;
+    width: 879.44px;
+    float: right;
+    z-index: 2;
+
+}
+#red{
+    width: 100%;
+    height: 560px;
+    background-color: white;
+    display: none;
+}
+/* Animation sur le titre*/
 
 .l1{height:250px;color:white;display: inline-block;font-size: 120%;cursor: pointer;
     font-family: 'Big Shoulders Text', cursive;letter-spacing: 2.5px;text-align: center;
-    border:2px solid white}
+    }
 
-.b {height:250px;
-    width: 20%;
-    text-align: center;font-size: 120%;cursor: pointer;border: 2px solid white}
+.b {height:250px;width: 20%;text-align: center;
+    font-size: 120%;cursor: pointer;border: 2px solid white}
 
 p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;letter-spacing: 2.5px}
-#titreInfograph {font-size: 170%;margin-top: 5px;}
 
 
 .box1 {width: 40%;background-color: #ff6819}
-.box2 {background-color: #7f1c0a;width: 20%}
+.box2 {background-color:rgb(44, 190, 189);width: 10%}
 .box3 {background-color: #2f7365;color:white;display: inline-block}
 .box4 {background-color: #a12731;color:white;display: inline-block}
 .box5 {background-color: #8e5c1a;color:white;display: inline-block}
@@ -27,14 +61,14 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 
 
 #photo {max-width: 200%;height:460px;overflow: scroll;
-    float:right;border: 2px solid white}
+    float:right;border: 2px solid white; margin-top: -180px}
 #photo1{display: inline-block;overflow: hidden;
 
 }
 
 /*Hover sur les boxes*/
 .box1:hover{background-color: #ff6819;transition: background-color 0.3s ease-in-out;}
-.box2:hover{background-color: #f03211;transition: background-color 0.3s ease-in-out;}
+.box2:hover{background-color: rgb(47, 213, 212);transition: background-color 0.3s ease-in-out;}
 .box3:hover{background-color: #49b8a6;transition: background-color 0.3s ease-in-out;}
 .box4:hover{background-color: #cc2b3c;transition: background-color 0.3s ease-in-out;}
 .box5:hover{background-color: #b7791e;transition: background-color 0.3s ease-in-out;}
@@ -42,7 +76,7 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 .box7:hover{background-color: #9fa670;transition: background-color 0.3s ease-in-out;}
 .box8:hover{background-color: #49b8a6;transition: background-color 0.3s ease-in-out;}
 
-.box2:hover {transform: scale3d(.99,.96,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
+.box2:hover {transform: scale3d(.99,.96,.99);transition: .2s ease-in-out;}
 .box3:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
 .box4:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
 .box5:hover {transform: scale3d(.96,.97,.99);transition: .2s ease-in-out;border-radius: 12px;border: none}
@@ -63,7 +97,7 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 
 /*animation/slider sur la photo*/
 
-@keyframes siderPhoto {
+@keyframes sliderPhoto {
     0% { left: 0; }
     20% { left: 0; }
     25% { left: -100%; }
@@ -97,12 +131,13 @@ p{display: block;padding-top: 35px;font-family: 'Big Shoulders Text', cursive;le
 }
 @media only screen and (min-width: 1300px) {
     #main{width:100%;height: 932px;margin-left: auto;margin-right: auto}
-    #photo{width: 40%;height: 740px}
+    #photo{width: 50%;height: 1020px;}
     .box1{width: 100%;height: 180px}
-    .box2{width: 60%;height: 180px}
-    .box3,.box4,.box5,.box6{width: 20%;height: 280px}
-    .box7{width: 40%;height: 280px}
+    .box2{width: 50%;height: 180px}
+    .box3,.box4,.box5,.box6{width: 25%;height: 280px;float: left}
+    .box7{width: 50%;height: 280px}
     .box8{width: 100%;height: 180px}
+
 }
 
 

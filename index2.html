@@ -6,8 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aa71811ed5.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="style2.css">
+
 </head>
 <body>
 
@@ -16,25 +17,53 @@
     <!--ligne 1-->
     <div class="ligne1">
         <div class="l1 box1">
-            <p id="titreInfograph">Infographist/Web developper</p>
+            <h1 class="ml2">
+                <span>P</span>
+                <span>o</span>
+                <span class="letter">r</span>
+                <span class="letter">t</span>
+                <span class="letter">f</span>
+                <span class="letter">o</span>
+                <span class="letter">l</span>
+                <span class="letter">i</span>
+                <span class="letter">o</span>
+            </h1>
             <i class="fas fa-user-astronaut"></i>
         </div><!--
-        --><div class="l1 box2"><p>Profile</p>
+        --><div id="profil" class="l1 box2" onclick="profil()"><p>Profile</p>
         <i class="fas fa-id-badge"></i>
     </div>
-
+        <!---------------CV------------------->
+        <div>
+        <img src="CV_pg1.jpg" id="cv1">
+        <img src="CV_pg2.jpg" id="cv2" >
+        </div>
+        <!---------------CV------------------->
         <div id="photo"><img src="African_portait_2.jpg" width="100%" alt="portret femme africaine">
         <div id="photo1"><img src="African_portait_1.jpg" width="110%" alt="portret femme africaine1"></div>
             <div id="photo3"><img src="African_portait_3.jpg" width="100%" alt="portret femme africaine3"></div>
             <div id="photo4"><img src="African_portait_4.jpg" width="100%" alt="portret femme africaine4"></div>
         </div>
+
+        <!--nex and previews buttons-->
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+    <!--The dots/circles-->
+    <div style="text-align: center">
+        <span class="dot" onclick="current"></span>
     </div>
 
     <div class="ln ligne2">
-        <div class="b box3"><p>Experience</p>
+        <div id="experience" class="b box3" onclick="experience()"><p>Experience</p>
             <i class="fas fa-briefcase"></i>
         </div><!--
-        --><div class="b box4"><p>Education</p>
+        --><div id="education" class="b box4"><p>Education</p>
+        <!---------------------------------->
+        <div >
+            <div  id="red">
+        </div>
+        <!---------------------------------->
         <i class="fas fa-book-open"></i>
     </div><!--
         --><div class="b box5"><p>Blog</p>
@@ -43,7 +72,7 @@
     </div>
 
     <div class="ln ligne3">
-        <div class="b box6"><p>social Menu</p>
+        <a href="https://www.linkedin.com/in/3dmodelingdesignerwolaelena"><div class="b box6"><p>social Menu</p></a>
             <i class="fab fa-internet-explorer"></i>
         </div><!--
          --><div class="b box7"><p>Contact</p>
@@ -53,8 +82,8 @@
         <i class="fas fa-laptop"></i>
     </div>
     </div>
-
-
 </div>
+
+<script src="js.js"></script>
 </body>
 </html>
